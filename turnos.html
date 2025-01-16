@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Ely - Turnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="turnos.html">Turnos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="servicios2.html">OPC SERV</a></li>
+        </ul>
+    </nav>
+
+    <div class="container2">
+        <a href="index.html"><h1><img src="logo.png" width="200"></h1></a>
+        <h1>Peluquería Ely</h1>
+        <br>
+        <!-- Sección de Servicios -->
+        <div class="services-section">
+            <h2>Turnos</h2>
+
+            <div class="container4">
+                
+
+                <!-- Formulario de Solicitud de Turno -->
+                <form action="#" method="POST" id="turnoForm">
+                    <div class="form-group">
+                        <label for="servicio">Selecciona un servicio:</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona...</option>
+                            <option value="tintura">Tintura</option>
+                            <option value="corte">Corte</option>
+                            <option value="peinado">Peinado</option>
+                            <option value="coloracion">Coloración</option>
+                            <option value="tratamientos">Tratamientos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha">Elije la fecha (Sujeta a cambios)</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="turno">Elije un turno (Sujeto a cambios)</label>
+                        <select  id="turno" name="turno" required>
+                            <option value="">Selecciona...</option>
+                            <option value="tintura">Mañana</option>
+                            <option value="mechas">Siesta</option>
+                            <option value="mechas">Tarde</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Detalles sobre el servicio"></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn">Enviar solicitud</button>
+                </form>
+
+            </div>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
